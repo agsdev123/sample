@@ -1,0 +1,12 @@
+{
+	// Enable/disable running edits from extensions on paste.
+	"editor.experimental.pasteActions.enabled": false,
+	// Shows the nested current scopes during the scroll at the top of the editor.
+	"editor.experimental.stickyScroll.enabled": false,
+	// Enabling this adjusts how the code action menu is rendered.
+	"editor.experimental.useCustomCodeActionMenu": false,
+	"editor.formatOnSave": true,
+	"eslint.options": {
+		"configFile": "\\ABSOLUTE\\PATH\\TO\\YOUR\\PROJECT\\VUE_PROJECT\\babel.config.js"
+	}
+}

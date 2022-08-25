@@ -1,0 +1,155 @@
+.HomePageServices_conatiner {
+  padding: 4% 3% 1%;
+  h3{
+    color: #1b1b11;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5%;
+    font-weight: 600;
+    letter-spacing: 1.28px;
+  }
+}
+.HomePageServices_slider {
+  display: flex;
+  justify-content: center;
+  img {
+    height: 75vh;
+    z-index: 0;
+    object-fit: fill;
+    width: 100%;
+  }
+  .service_discription{
+    h4{
+      padding-top: 3%;
+      text-align: center;
+      font-size: 1.9rem;
+      color: #5e5e5e;
+      text-transform: lowercase;
+      font-weight: 600;
+      letter-spacing: 0.7px;
+      width: 70%;
+      margin: auto;
+      &::first-letter, &::first-line{
+        text-transform: capitalize;
+      }
+    }
+  }
+  .slick-dots {
+    display: none !important;
+  }
+  .slick-slider {
+    width: 100%;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 46%;
+    z-index: 1000;
+  }
+  .slick-prev {
+    left:1.5%;
+  }
+  .slick-next {
+    right: 1.5%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 3.5rem;
+    color: #909090;
+  }
+  // @media screen and (min-width: 1440px) {
+  //   .slick-slider {
+  //     width: 56%;
+  //   }
+  //   .slick-prev {
+  //     left: -38% !important;
+  //   }
+  //   .slick-next {
+  //     right: -36% !important;
+  //   }
+  // }
+  // @media screen and (max-width: 75em) {
+  //   .slick-slider {
+  //     width: 76%;
+  //   }
+  //   .slick-prev {
+  //     left: -16% !important;
+  //   }
+  //   .slick-next {
+  //     right: -14% !important;
+  //   }
+  // }
+}
+
+@media screen and (max-width:56em) {
+  .HomePageServices_conatiner {
+    padding: 7% 3% 1%;
+    h3{
+      font-size: 2.2rem;
+    }
+  }
+  .HomePageServices_slider {
+    padding-top: 2%;
+    img {
+      height: 50vh;
+      width: 100%;
+    }
+    .service_discription{
+      h4{
+        font-size: 2.1rem;
+        width: 70%;
+      }
+    }
+    .slick-slider {
+      width: 100%;
+    }
+    .slick-prev,
+    .slick-next {
+      top: 42%;
+    }
+    .slick-prev {
+      left:1.2%;
+    }
+    .slick-next {
+      right: 1.2%;
+    }
+  }
+  
+}
+
+
+@media screen and (max-width:37em) {
+  .HomePageServices_conatiner {
+    padding: 18% 11% 1% 8%;
+    margin-left: 0;
+    h3{
+      font-size: 2.2rem;
+    }
+  }
+  .HomePageServices_slider {
+    padding-top: 10%;
+    img {
+      height:30rem;
+      width: 100%;
+    }
+    .service_discription{
+      h4{
+        font-size: 2.1rem;
+        width: 80%;
+      }
+    }
+    .slick-slider {
+      width: 100%;
+    }
+    .slick-prev,
+    .slick-next {
+      top: 30%;
+    }
+    .slick-prev {
+      left:0%;
+    }
+    .slick-next {
+      right: 1.2%;
+    }
+  }
+  
+}

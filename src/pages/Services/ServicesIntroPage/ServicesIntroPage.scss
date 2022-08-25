@@ -1,0 +1,72 @@
+.ServicesIntroPage_container{
+    padding: 2% 4% 1%;
+    h3{
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+        font-size: 1.9rem;
+        font-weight: 600;
+        color: rgb(94, 94, 94);
+        padding: 2% 3%;
+        line-height: 32px;
+    }
+    .ServicesIntroPage_content{
+        display: flex;
+        padding: 3.6% 2% 1%;
+
+        h4{
+            font-weight: 500;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width:56em) {
+    .ServicesIntroPage_container{
+        padding: 8% 4% 1%;
+        h3{
+            font-size: 1.9rem;  
+        }
+        h4{
+            font-size: 1.9rem;
+            padding: 2% 6%;
+        }
+        .ServicesIntroPage_content{
+            padding: 8% 2% 1%;
+            h4{
+                font-weight: 500;
+                font-size: 1.8rem;
+                padding: 2% 6%;
+            }
+    
+        }
+    }
+}
+
+@media screen and (max-width:37em) {
+    .ServicesIntroPage_container{
+        padding: 18% 5% 1%;
+        h3{
+            font-size: 2rem;  
+        }
+        h4{
+            font-size: 1.9rem;
+            padding: 2% 6% 12%;
+        }
+        .ServicesIntroPage_content{
+            padding: 12% 2% 8%;
+            display: unset;
+            margin-top: 10%;
+            h4{
+                font-weight: 500;
+                font-size: 1.9rem;
+                padding: 2% 8%;
+            }
+    
+        }
+    }
+}

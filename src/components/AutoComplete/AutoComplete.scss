@@ -1,0 +1,97 @@
+.AutocompletePlace-container {
+  position: relative;
+  width: 100%;
+
+  .google-places-autocomplete__input {
+    width: 100%;
+    padding: 0.1rem 0 0;
+    padding-left: 11px;
+    // margin-bottom: 2%;
+    border-radius: 4px;
+    opacity: 1;
+    outline: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--black-eleventh);
+    font-family: Poppins;
+    line-height: 1.5;
+    background-color: "white";
+    background-image: none;
+    border: 1px solid var(--grey);
+    &:hover {
+      border-color: var(--primary);
+    }
+    &::placeholder {
+      color: var(--black-tenth);
+      opacity: 0.8;
+    }
+    &:active {
+      border-color:var(--primary);
+    }
+
+    &:focus {
+      border-color:var(--primary);
+      outline: 0;
+    }
+  }
+  .google-places-autocomplete__suggestions-container {
+    position: absolute;
+    top: 4rem;
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 2px var(--ant-primary-color-outline);
+    z-index: 1000;
+    .google-places-autocomplete__suggestion {
+      padding: 0.4rem 1rem 0.4rem 1.5rem;
+      text-align: left;
+      cursor: pointer;
+    }
+    .google-places-autocomplete__suggestion:nth-child(1) {
+      padding-top: 0.6rem;
+    }
+    .google-places-autocomplete__suggestion:nth-last-child(1) {
+      padding-bottom: 0.6rem;
+    }
+    .google-places-autocomplete__suggestion:hover {
+      background-color: var(--ant-primary-color-outline);
+      // color: var(--pure-white);
+      border-radius: 2px;
+    }
+  }
+
+  .AutocompletePlace-results {
+    position: absolute;
+    background-color: var(--white);
+    z-index: 2000;
+    width: 100%;
+    z-index: 2;
+    background: var(--full-white) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 40px var(--black-sixteen);
+    border-radius: 15px;
+    opacity: 1;
+
+    h3 {
+      padding: 1rem;
+      position: relative;
+      cursor: pointer;
+      white-space: nowrap;
+      z-index: 5;
+      overflow: hidden;
+
+      img {
+        width: 25px;
+        height: 30px;
+        margin-right: 1%;
+      }
+    }
+  }
+  input.ant-input.AutocompletePlace-input {
+    width: 90%;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,74 @@
+.TermsConditions_container {
+    .TermsConditions_content {
+        margin: 3.5% 3% 1%;
+        width: 60%;
+        margin-left: 20%;
+        h1 {
+            font-family: "Helsinki", arial, helvetica, sans-serif !important;
+            font-size: 4.4rem;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            text-align: center;
+            font-weight: 700;
+            color: #b09207;
+        }
+    }
+    .TermsConditions_data {
+        padding-left: 8%;
+        h4 {
+            font-size: 1.93rem;
+            color: #5e5e5e;
+            line-height: 32px;
+        }
+        .data_h4{
+            margin-top: 3%;
+        }
+        ul{
+            padding-left: 5% !important;
+            margin-top: 2.2%;
+            li{
+                font-size: 1.93rem;
+                color: #5e5e5e;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:56em) {
+    .TermsConditions_container {
+        .TermsConditions_content {
+            margin: 8% 3% 1%;
+            width: 80%;
+            margin-left: 10%;
+            h1 {
+                font-size: 4.4rem;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:37em) {
+    .TermsConditions_container {
+        .TermsConditions_content {
+            margin: 24% 3% 1%;
+            width: 80%;
+            margin-left: 10%;
+            h1 {
+                font-size: 3.5rem;
+                line-height: 4rem;
+                font-weight: 700;
+                margin-bottom: 14%;
+            }
+            h4{
+                font-size: 1.95rem;
+            }
+            ul{
+                li{
+                    font-size: 1.95rem;
+                }
+            }
+        }
+    } 
+}

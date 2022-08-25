@@ -1,0 +1,134 @@
+// @import "../../Scss/base/colors";
+
+.Header_contianer {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6% 3% 1%;
+  .Header_contianer_mobile {
+    display: none;
+  }
+  .Header_logo {
+    // background-color: #1b1b1b !important;
+    img {
+      height: 5.4rem;
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  .Header_navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    .active {
+      color: #8c7407;
+      font-size: 2rem;
+      font-size: 1.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+    .inactive {
+      color: #1b1b1b;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+      &:hover {
+        color: #665306;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 56em) {
+  .Header_contianer {
+    padding: 8% 8% 1% 8%;
+    .Header_logo {
+      img {
+        height: 4.5rem;
+      }
+    }
+    .Header_navbar {
+      display: none;
+    }
+    .Header_contianer_mobile {
+      display: unset;
+      .anticon {
+        font-size: 2.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .ant-drawer-header {
+    position: relative;
+    padding-top: 2%;
+    .ant-drawer-header-title {
+      padding-top: 4%;
+      .ant-drawer-close {
+        font-size: 5rem;
+        position: absolute;
+        right: 4%;
+      }
+    }
+  }
+  .ant-drawer-body {
+    padding: 12% 10%;
+    .nav_data {
+      .active {
+        color: #8c7407;
+        font-size: 2rem;
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 52px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+      }
+      .inactive {
+        color: #1b1b1b;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 52px;
+        &:hover {
+          color: #665306;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 37em) {
+  .Header_contianer {
+    padding: 12% 10% 1% 8%;
+    .Header_logo {
+      img {
+        height: 4rem;
+      }
+    }
+    .Header_contianer_mobile {
+      .anticon {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .ant-drawer-header {
+    padding-top: 5%;
+    .ant-drawer-header-title {
+      padding-top: 4%;
+      .ant-drawer-close {
+        font-size: 3rem;
+        padding-top: 5%;
+      }
+    }
+  }
+  .ant-drawer-body {
+    padding: 25% 20%;
+  }
+}

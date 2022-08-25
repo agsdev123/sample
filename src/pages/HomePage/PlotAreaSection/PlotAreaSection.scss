@@ -1,0 +1,600 @@
+.PdfViewer_conatiner {
+  text-align: center;
+  padding-top: 5%;
+  margin: 0 2%;
+  padding-bottom: 1rem;
+  // background-color: #000;
+  overflow-y: auto;
+  // height: 100vh;
+  //serach bar styles starts from here
+  .searchbar_content {
+    align-items: baseline;
+    padding-left: 1%;
+    padding-right: 0.8%;
+    .ant-tabs-top > .ant-tabs-nav::before {
+      border-bottom: none !important;
+    }
+    .ant-tabs-tab + .ant-tabs-tab {
+      margin: 0 0 0 0rem;
+    }
+    .ant-tabs > .ant-tabs-nav {
+      .ant-tabs-nav-list {
+        // display: unset;
+        width: 36%;
+        background-color: #f4e4b9;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0;
+
+        .ant-tabs-tab {
+          width: 50%;
+          justify-content: center;
+        }
+        .ant-tabs-tab-btn {
+          color: #000;
+          opacity: 0.5;
+          font-weight: 600;
+          font-size: 1.4rem;
+          margin: 0;
+        }
+        // styles for active tab
+        .ant-tabs-tab-active {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          font-weight: 600;
+          background-color: #8c7407;
+          box-shadow: 0px 0px 5px #8c7407;
+          margin: 0;
+          .ant-tabs-tab-btn {
+            color: #fff;
+            font-size: 1.4rem;
+            opacity: 1;
+            border-bottom: 3.5px solid #8c7407;
+            border-bottom: 3.1px solid #fff;
+          }
+        }
+      }
+      .ant-tabs-ink-bar {
+        display: none;
+      }
+    }
+    .ant-tabs > .ant-tabs-nav,
+    .ant-tabs > div > .ant-tabs-nav {
+      margin: 0;
+    }
+    .filter_btn {
+      margin-left: 4rem;
+      .ant-btn {
+        border: none;
+        background-color: #8c7407;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 1rem;
+        height: 5rem;
+        width: 11rem;
+      }
+    }
+  }
+  //serach bar styles end here
+
+  // Tools tab styles starts from here
+  .add_plots_tools {
+    padding-bottom: 1.5%;
+    background-color: #f6f9fc;
+    .loyout_directions {
+      padding-top: 2%;
+      padding-left: 12%;
+      padding-left: 7%;
+    }
+  }
+  // Tools tab styles end here
+
+  // search bar styles starts from here
+  .final_searchBar {
+    margin-left: 7%;
+    margin-right: 7%;
+    height: 6.5rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 0.6fr 0.36fr;
+    box-shadow: 0 0 20px rgb(199, 192, 189);
+    background-color: unset;
+    border-radius: 30px;
+    border: 2px solid rgb(199, 192, 189);
+    margin-bottom: 3rem;
+    padding-left: 1%;
+    .property {
+      display: flex;
+      height: 6rem;
+    }
+    .ant-divider-vertical {
+      height: 45px;
+      border-left: 2px solid #8c7407;
+      margin-top: 7.5px;
+    }
+    .anticon {
+      font-size: 2rem;
+    }
+
+    .ant-input {
+      height: 6rem !important;
+      height: 100%;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #75717b;
+      border: none;
+      background-color: unset;
+      &::after,
+      &::before,
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: #fff;
+        border: none;
+        box-shadow: none !important;
+      }
+    }
+    input::-webkit-input-placeholder {
+      color: #75717b;
+    }
+    .ant-select {
+      width: 100% !important;
+      border: none;
+      .ant-select-selector {
+        height: 100%;
+        line-height: 6rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #75717b;
+        border: none;
+        text-align: left;
+        background-color: unset;
+        .ant-select-selection-item {
+          line-height: 6rem;
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: #75717b;
+        }
+        &::after,
+        &::before,
+        &:hover,
+        &:focus,
+        &:active {
+          border-color: #fff !important;
+          border: none;
+          box-shadow: none !important;
+        }
+      }
+      span {
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+    }
+    .searchIcon {
+      margin: 0 0rem;
+      align-items: center;
+      height: 6rem !important;
+      background-color: #8c7407;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      width: 6rem;
+      height: 5.6rem;
+      cursor: pointer;
+      .anticon {
+        font-size: 2.8rem;
+        color: #fff;
+      }
+    }
+    .searchIcon_plan {
+      height: 6rem;
+      .ant-btn {
+        height: 6rem;
+        border: none;
+        background-color: #8c7407;
+        font-size: 1.45rem;
+        color: #fff;
+        width: 100%;
+        font-weight: 500;
+        border-radius: 30px;
+      }
+    }
+  }
+  .plot_size_details {
+    padding: 1% 2% 2.5%;
+    background-color: #f6f9fc;
+    width: 100%;
+    .plan_lock_btn {
+      margin-bottom: 3rem;
+    }
+    .loyout_directions {
+      padding-left: 7%;
+    }
+  }
+
+  // plan lock Btn styles starts from here
+
+  .plan_lock_btn {
+    position: relative;
+    display: flex;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 1rem;
+    align-items: right;
+    justify-content: right;
+    padding-right: 7%;
+
+    .ant-btn {
+      border: none;
+      background-color: #8c7407;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 10px;
+      height: 5rem;
+      padding: 0 5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .btn {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    border-radius: 11px;
+    margin: 0;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+      0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  }
+  .btn .wave {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #c0a146;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -25rem;
+    margin-top: -48rem;
+    transform-origin: 50% 49%;
+    border-radius: 43%;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+      0 8px 10px -5px rgba(0, 0, 0, 0.3);
+    animation: drift 8000ms infinite linear;
+  }
+  .btn .text {
+    position: relative;
+    z-index: 2;
+    line-height: 3.4;
+  }
+  .btn:hover {
+    box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.1), 0 6px 10px 5px rgba(0, 0, 0, 0.12), 0 8px 5px -5px rgba(0, 0, 0, 0.3);
+  }
+  .btn.rumble {
+    animation: rumbleinthejungle 300ms linear;
+  }
+  // plan lock Btn styles end here
+
+  .dev-helper .react-grid-item {
+    border: 6px solid #000;
+  }
+  .tools {
+    flex-direction: column;
+    box-shadow: 0 0 20px rgb(199, 192, 189);
+    display: inline-flex;
+    height: fit-content;
+    border-radius: 6px;
+  }
+  .react-grid-layout.dev-helper {
+    border: 4px solid #000;
+  }
+  .react-grid-item.react-grid-placeholder {
+    background-color: unset;
+  }
+  .react-grid-layout.bedroom1 {
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(120px, -10px) !important;
+    text-orientation: mixed;
+  }
+
+  .react-grid-layout.Dinning {
+    display: flex;
+    justify-content: flex-start;
+    transform: translate(120px, 10px) !important;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .react-grid-layout.bedroom2 {
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(-95px, -10px) !important;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+  }
+  .react-grid-item.bedroom1.static.cssTransforms {
+    width: auto !important;
+  }
+  .react-grid-item.no-drag.static.cssTransforms {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+  }
+  ul {
+    padding-left: 0;
+  }
+  ul li {
+    list-style: none;
+  }
+  img {
+    height: 100%;
+  }
+}
+
+// Styles for drawer
+.site-drawer-render-in-current-wrapper {
+  background: #fff !important;
+  width: 88%;
+  overflow: hidden;
+  position: relative;
+  height: 40rem;
+  padding: 48px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #ebedf0;
+  border-radius: 2px;
+  left: 6.5%;
+  top: 20%;
+  margin-top: -11.8rem;
+  .ant-drawer-body {
+    overflow: hidden;
+  }
+  .ant-drawer-mask {
+    background-color: unset;
+  }
+}
+
+@media screen and (max-width: 56em) {
+  .PdfViewer_conatiner {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 37em) {
+  .PdfViewer_conatiner {
+    padding-top: 10%;
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rumbleinthejungle {
+  0% {
+    transform: translatex(0);
+  }
+  25% {
+    transform: translatex(-5px);
+  }
+  50% {
+    transform: translatex(0);
+  }
+  75% {
+    transform: translatex(5px);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
+
+// styles for plot are drop down
+.property_type_data {
+  padding-top: 8%;
+  padding-bottom: 2%;
+  // height: 28rem;
+  overflow-y: auto;
+  box-shadow: 0 0 1px #75717b;
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: #dbdbdb;
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: #dbdbdb;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #8c7407;
+    border-radius: 120px !important;
+  }
+  .ground_floor_data {
+    width: 100%;
+    padding: 1% 2%;
+    .floors_data {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1% 0%;
+      h4 {
+        font-size: 1.38rem;
+        font-weight: 600;
+        color: #75717b;
+      }
+      h5 {
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #8c7407;
+        font-weight: 600;
+      }
+    }
+    .floor_btns {
+      display: flex;
+      justify-content: space-between;
+    }
+    .ant-btn {
+      width: 7.5rem;
+      box-shadow: 0 0 2px #8c7407;
+      font-weight: 600;
+      font-size: 1.3rem;
+      height: 3.4rem;
+    }
+  }
+  .floors_info {
+    padding: 3.5% 2% 4%;
+    h3 {
+      text-align: left;
+      font-weight: 600;
+      font-size: 1.95rem;
+      color: #8c7407;
+      text-transform: capitalize;
+      margin-bottom: 0.2rem;
+    }
+    h5 {
+      font-size: 1.35rem;
+      color: #75717b;
+      font-weight: 600;
+      text-align: left;
+    }
+    .room_btns {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1.5%;
+      .ant-btn {
+        box-shadow: 0 0 2px #8c7407;
+        font-weight: 600;
+        font-size: 1.3rem;
+        height: 3.4rem;
+        width: 9.5rem;
+        color: #8c7407;
+      }
+    }
+  }
+  .Rooms_dimensions {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+    .ant-input {
+      width: 90%;
+      width: 13rem;
+      height: 3.5rem;
+      font-size: 1.3rem;
+      box-shadow: 0 0 2px #8c7407;
+      font-weight: 600;
+      &::placeholder {
+        font-size: 1.3rem;
+        color: #75717b;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.plot_area_details {
+  padding: 2.5% 0%;
+  // height: 35rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  // box-shadow: 0 0 30px #000;
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: #dbdbdb;
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: #dbdbdb;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #8c7407;
+    border-radius: 120px !important;
+  }
+  .total_plot,
+  .back_area {
+    background-color: #f6f9fc;
+    padding: 3% 3.5% 1%;
+    box-shadow: 0 0 2px #b9bcd6;
+    margin-bottom: 2rem;
+    span {
+      color: #8c7407;
+      font-weight: 700;
+    }
+    .ant-input {
+      width: 10rem;
+      height: 3.5rem;
+      border: 1.5px solid #5a5a5a;
+      &::placeholder {
+        color: #5a5a5a;
+        font-weight: 600;
+        font-size: 1.25rem;
+        opacity: 0.7;
+      }
+    }
+    .area_info {
+      width: 30%;
+      h3 {
+        height: 4rem;
+        color: #8c7407;
+        font-weight: 700;
+        padding-top: 0.8rem;
+      }
+    }
+  }
+  .inputs1 {
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+  }
+
+  .builtUp_area {
+    text-align: left;
+    padding: 1% 3.5% 1%;
+    background-color: #f6f9fc;
+    box-shadow: 0 0 2px #b9bcd6;
+    margin-bottom: 2rem;
+    .area_info {
+      padding-top: 0;
+      h3 {
+        color: #8c7407;
+        font-weight: 700;
+        margin-top: 0;
+      }
+    }
+    .inputs1 {
+      align-items: baseline;
+      span {
+        color: #8c7407;
+        font-weight: 700;
+      }
+    }
+    h5 {
+      font-weight: 600;
+      color: #75717b;
+      font-size: 1.3rem;
+      width: 10rem;
+    }
+  }
+  .legend_details {
+    padding: 2% 1.5% 1% 3.5%;
+    background-color: #f6f9fc;
+    padding: 3% 3.5% 1%;
+    box-shadow: 0 0 2px #b9bcd6;
+    .legend_data {
+      display: grid;
+      grid-template-columns: 60% 20% 20%;
+      h3 {
+        font-size: 1.35rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

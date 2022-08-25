@@ -1,0 +1,116 @@
+.BlogUpdate_container{
+    .BlogUpdate_content{
+        background-image: url("../../Assets/blogbg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 45rem;
+        margin-top: 1.5%;
+        text-align: center;
+        object-fit: fill;
+        margin: 2% 3% 1%;
+        h2{
+            color: #fff;
+            font-size: 4.5rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            padding-top: 7%;
+        }
+        .BlogUpdate_data{
+            height: 15rem;
+            margin: auto;
+            width: 38%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 3rem;
+           
+            .BlogUpdate_data1{
+                cursor: pointer;
+                background-color: #fff;
+                padding: 5% 1% 2%;
+                box-shadow: 1px 1px #8c7407;
+                h3{
+                    font-size: 2rem;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    line-height: 22px;
+                    margin-bottom: 0rem;
+                }
+                h4{
+                    font-size: 1.6rem;
+                    opacity: 0.9;
+                    margin-bottom: 0.5rem;
+                }
+                p{
+                    font-size: 1.9rem;
+                    color: #8c7407;
+                    cursor: pointer;
+                }
+                &:hover{
+                    box-shadow: 0px 0px 5px #fff;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:56em) {
+    .BlogUpdate_container{
+        .BlogUpdate_content{
+            margin-top: 1.8%;
+            margin: 2% 4.5% 1%;
+            h2{
+                font-size: 4.5rem;
+                margin-bottom: 7%;
+            }
+            .BlogUpdate_data{
+                height: 15rem;
+                margin: auto;
+                width:84%;
+                .BlogUpdate_data1{
+                    h3{
+                        font-size: 2rem;
+                    }
+                    h4{
+                        font-size: 1.61rem;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width:37em) {
+    .BlogUpdate_container{
+        .BlogUpdate_content{
+            margin: 12% 0% 1%;
+            height: auto;
+            padding-bottom: 5%;
+            h2{
+                font-size: 4rem;
+                margin-bottom: 15%;
+                padding-top: 20%;
+            }
+            .BlogUpdate_data{
+                width:84%;
+                display: unset;
+                .BlogUpdate_data1{
+                    width: 65%;
+                    margin-bottom: 5%;
+                    margin-left: 18%;
+                    padding: 4% 1% 2.5%;
+                    h3{
+                        font-size: 1.9rem;
+                        line-height: 2rem;
+                    }
+                    h4{
+                        font-size: 1.6rem;
+                    }
+                    p{
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+    }  
+}
