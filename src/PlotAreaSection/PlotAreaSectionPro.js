@@ -314,7 +314,6 @@ const PlotAreaSectionPro = ({ type, area, setcompletePlotArea, index,propertyfac
       }else{
 
       }
-console.log("ColsCount",ColsCount)
       const newObj = {
         i: category,
         task: "container" + index,

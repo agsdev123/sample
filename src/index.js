@@ -7,6 +7,7 @@ import "react-resizable/css/styles.css";
 import "./index.scss";
 import App from "./App";
 
+
 import ConfigProviderComponent from "./ConfigProvider";
 
 
@@ -22,7 +23,9 @@ window.addEventListener("storage", () => {
 
 ReactDOM.render(
   <ConfigProviderComponent>
-
+    {/* <ErrorBoundary> */}
+    {/* <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}> */}
         <App />
 
     {/* </ErrorBoundary> */},
